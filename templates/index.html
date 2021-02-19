@@ -2,16 +2,16 @@
 <html>
 <head>
     <title>PizzaProject</title>
-    <link rel='stylesheet' type='text/css' href='style.scss'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
 </head>
 
 <body class='body'>
 <div id='fixedwidth'>    
 
         <!-- Log in-->
-         <form action="/login" method="post">
+        <form id = "loginForm" action="/login" method="post">
         <label for='login'>
-            <input name='username' type='text' placeholder='Username' required><br/>
+            <input name='username' type='text' placeholder='Username' required>
             <input name='password' type='text' placeholder='Password' required>
         </label>
         <button type='submit'>Submit</button>
@@ -19,6 +19,7 @@
 	
         
             <!-- Title, menu item 1/2/3/4-->
+        <div id="titleMenu">    
         <h1 id='vInline'>Pizza Project</h1>
         <ul id='sidebar'>                
             <li style='padding-right: 5px;'><a class='noUnderline' href='#'>Starters</a></li>
@@ -26,6 +27,7 @@
             <li style='padding-right: 5px;'><a class='noUnderline' href='#'>Desserts</a></li>
             <li style='padding-right: 5px;'><a class='noUnderline' href='#'>Drinks</a></li>
         </ul>
+        </div>
 
         <!--The image/carousel -->
         <a href='#'><img id = "topImage" src='https://www.myrtlebeachhotels.com/wp-content/uploads/2018/04/pizza-horizontal.jpg' alt='Some really nice looking food'></a>
