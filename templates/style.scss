@@ -17,11 +17,19 @@
 	display: block;
 }
 
-#sidebar {
+%headerDesign {
     display: inline-flex;
     list-style:none;
     float: right;
     padding: 10px;
+}
+
+#sidebar {
+    @extend %headerDesign;
+}
+
+#loginForm {
+    @extend %headerDesign;
 }
 
 .noUnderline {
@@ -47,4 +55,9 @@
   .item1{
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+
+#topImage {
+    width: 100%;
 }
