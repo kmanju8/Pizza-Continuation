@@ -7,6 +7,17 @@
     background-color: #525252
 }
 
+#titleMenu {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    li {
+        display: inline-block;
+    }
+}
+
 #vInline {
     @include basicText;
 }
