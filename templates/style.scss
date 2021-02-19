@@ -16,21 +16,38 @@
 	display: block;
 }
 
+
 .alignleft {
 	float: left;
 }
 
 
-#sidebar {
+
+%headerDesign {
+
     display: inline-flex;
     list-style:none;
     float: right;
     padding: 10px;
 }
 
+
 #sidebar li{
 	padding: 5px 5px 5px 5px;
 	text-decoration: none ;
+}
+
+#sidebar {
+    @extend %headerDesign;
+}
+
+#loginForm {
+    @extend %headerDesign;
+}
+
+.noUnderline {
+    text-decoration: none;
+
     border-right: 5px;
     @include basicText;
 }
@@ -40,6 +57,7 @@
     grid-column-start: 1;
     grid-column-end: 4;
 }
+
 
 #contactcontainer{
 	grid-column-start: 2;
@@ -76,4 +94,9 @@
 
 #loginblock{
 	float: right;
+}
+
+
+#topImage {
+    width: 100%;
 }

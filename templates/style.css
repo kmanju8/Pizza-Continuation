@@ -6,13 +6,16 @@
   display: inline;
   color: white;
   font-family: "Noto Sans", sans-serif;
+  float: left;
 }
 
 #fixedwidth {
-  width: 900px;
+  width: 874px;
+  margin: 0 auto;
+  display: block;
 }
 
-#sidebar {
+#loginForm, #sidebar {
   display: inline-flex;
   list-style: none;
   float: right;
@@ -45,6 +48,10 @@
 .item1 {
   grid-column-start: 1;
   grid-column-end: 4;
+}
+
+#topImage {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
