@@ -9,11 +9,15 @@
 <div id='fixedwidth'>    
 
         <!-- Log in-->
-        <form>
-            <label for='login'><input id='login' type='text' placeholder='Javascript???' required></label>
-            <button type='Submit'>Submit</button>
+         <form action="/login" method="post">
+        <label for='login'>
+            <input name='username' type='text' placeholder='Username' required><br/>
+            <input name='password' type='text' placeholder='Password' required>
+        </label>
+        <button type='submit'>Submit</button>
         </form>
-    
+	
+        
             <!-- Title, menu item 1/2/3/4-->
         <h1 id='vInline'>Pizza Project</h1>
         <ul id='sidebar'>                
@@ -24,7 +28,7 @@
         </ul>
 
         <!--The image/carousel -->
-        <a href='#'><img src='#' alt='Some really nice looking food'></a>
+        <a href='#'><img id = "topImage" src='https://www.myrtlebeachhotels.com/wp-content/uploads/2018/04/pizza-horizontal.jpg' alt='Some really nice looking food'></a>
         <div class='gridContainer'>
             <!--Intro Copy Headline and text-->
             <div class='item1'>
@@ -56,14 +60,11 @@
         </ul>
     </div>
     <!-- Contact form-->
-    <form action="/login" method="post">
-        <label for='login'>
-            <input name='username' type='text' placeholder='Username' required><br/>
-            <input name='password' type='text' placeholder='Password' required>
-        </label>
-        <button type='submit'>Submit</button>
-    </form>
-	
+   <form>
+            <label for='login'><input id='login' type='text' placeholder='Javascript???' required></label>
+            <button type='Submit'>Submit</button>
+        </form>
+    
 
 </div><!--fixedwidth close-->
 	
