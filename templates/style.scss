@@ -8,7 +8,6 @@
 }
 
 #vInline {
-    display: inline;
     @include basicText;
 }
 #fixedwidth{
@@ -17,6 +16,11 @@
 	display: block;
 }
 
+.alignleft {
+	float: left;
+}
+
+
 #sidebar {
     display: inline-flex;
     list-style:none;
@@ -24,27 +28,52 @@
     padding: 10px;
 }
 
-.noUnderline {
-    text-decoration: none;
+#sidebar li{
+	padding: 5px 5px 5px 5px;
+	text-decoration: none ;
     border-right: 5px;
     @include basicText;
 }
 
-.grid-container {
-    display: grid;
-    /*Used to get 3 columns of equal width*/
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-gap: 40px;
-    /*background-color: #2196F3;*/
-    padding: 10px;
-    @include basicText;
-  }
-  .grid-container {
-    width: 290px;
-    height: 300px;
-  }
-  
-  .item1{
+
+.item1{
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+#contactcontainer{
+	grid-column-start: 2;
+	grid-column-end: 4;
+	text-align: right;
+}
+
+#contactcontainer::before{
+	content:"";
+	background-color: #555555;
+	position: absolute;
+	height: 20%;
+	width: 200vw;
+	left: -100vw;
+	z-index: -1;
+}
+
+.grid-container {
+  display: grid;
+  /*Used to get 3 columns of equal width*/
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 40px;
+  /*background-color: #2196F3;*/
+  padding-top: 100px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 0, 0.8);
+}
+
+.productpreview{
+	max-width: 100%;
+}
+
+#loginblock{
+	float: right;
 }
