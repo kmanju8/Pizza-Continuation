@@ -1,0 +1,50 @@
+@mixin basicText {
+    color: white;
+    font-family: 'Noto Sans',sans-serif;    
+}
+
+.body {
+    background-color: #525252
+}
+
+#vInline {
+    display: inline;
+    @include basicText;
+}
+#fixedwidth{
+	width: 874px;
+	margin: 0 auto;
+	display: block;
+}
+
+#sidebar {
+    display: inline-flex;
+    list-style:none;
+    float: right;
+    padding: 10px;
+}
+
+.noUnderline {
+    text-decoration: none;
+    border-right: 5px;
+    @include basicText;
+}
+
+.grid-container {
+    display: grid;
+    /*Used to get 3 columns of equal width*/
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 40px;
+    /*background-color: #2196F3;*/
+    padding: 10px;
+    @include basicText;
+  }
+  .grid-container {
+    width: 290px;
+    height: 300px;
+  }
+  
+  .item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

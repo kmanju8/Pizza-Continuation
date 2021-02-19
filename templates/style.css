@@ -1,0 +1,50 @@
+.body {
+  background-color: #525252;
+}
+
+#vInline {
+  display: inline;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#fixedwidth {
+  width: 900px;
+}
+
+#sidebar {
+  display: inline-flex;
+  list-style: none;
+  float: right;
+  padding: 10px;
+}
+
+.noUnderline {
+  text-decoration: none;
+  border-right: 5px;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  /*Used to get 3 columns of equal width*/
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 40px;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.grid-container {
+  width: 290px;
+  height: 300px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+/*# sourceMappingURL=style.css.map */
